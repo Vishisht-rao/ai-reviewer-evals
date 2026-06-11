@@ -11,7 +11,7 @@ We evaluate four AI reviewing systems on a curated set of TMLR papers across fiv
 | `accepted` | ~50 | Yes |
 | `both_no` | ~50 | No |
 | `claims_only_no` | ~50 | No |
-| `flaws_gemini` | ~71 | No |
+| `flaws_gemini` | ~67 | No |
 | `flaws_openai` | ~50 | No |
 
 Ground truth is sourced from TMLR Action Editor decisions. The `flaws_*` categories contain papers rejected specifically due to unsupported claims; for these, we also annotate *where* the AI reviewer located the flaw.
@@ -41,7 +41,7 @@ ai-reviewer-evals/
 
 All PDFs, ground truths, and reviewer outputs are distributed as a separate archive (not tracked in this repo due to size):
 
-> **Download:** [Google Drive — test_cases_all.zip](#) *(link to be added)*
+> **Download:** [Google Drive — test_cases_all.zip](#https://drive.google.com/drive/folders/1l0PfN0C-jjXlT-qECT7C_EDHT61o2o61?usp=sharing)
 
 The archive has one subfolder per category, each containing:
 - `pdfs/` — input papers
