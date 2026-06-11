@@ -1,0 +1,29 @@
+{
+  "description": "Papers used as calibration examples in the Claude reviewer prompts. Exclude these from evaluations to prevent train/test leakage.",
+  "excluded_papers": {
+    "tmlr_test_cases_final_accepted": [
+      "Adapt_via_Bayesian_Nonparametric_Clustering:_Fine-Grained_Classification_for_Model_Recycling_Under_Domain_and_Category_Shift",
+      "Improved_Sample_Complexity_Bounds_For_Diffusion_Model_Training_Without_Empirical_Risk_Minimizer_Access",
+      "Rethinking_Coreset_Selection:_The_Surprising_Effectiveness_of_Soft_Labels",
+      "A_Tighter_Bound_for_Reward_Learning_in_Reinforcement_Learning_from_Human_Feedback"
+    ],
+    "tmlr_test_cases_final_claims_only_no": [
+      "ARGen-Dexion:_Autoregressive_Image_Generation_Made_Stronger_by_Vision_Decoder",
+      "Experience_Replay_with_Random_Reshuffling",
+      "SAPIENT:_Continual_Test-time_Adaptation_via_Lightweight_plug-and-play_Adapters",
+      "Improving_Dynamic_Object_Interactions_in_Text-to-Video_Generation_with_AI_Feedback"
+    ],
+    "tmlr_test_cases_final_audience_only_no": [
+      "Document_Classification_using_Reference_Information",
+      "Closed-form_proximal_operator_of_regularized_exponential_functions_for_incremental_learning",
+      "High-Performance_Machine_Learning_for_FinTech",
+      "Modularity_is_the_Bedrock_of_Natural_and_Artificial_Intelligence",
+      "Interpretable_Estimation_of_CNN_Deep_Feature_Density_using_Copula_and_the_Generalized_Characteristic_Function",
+      "PAC_Guarantees_for_Reinforcement_Learning:_Sample_Complexity,_Coverage,_and_Structure"
+    ],
+    "tmlr_test_cases_final_both_no": [
+      "Robust_Object_Detection_with_Pseudo_Labels_from_VLMs_using_Per-Object_Co-teaching",
+      "Improving_Adversarial_Training_for_Two-player_Competitive_Games_via_Episodic_Reward_Engineering"
+    ]
+  }
+}
