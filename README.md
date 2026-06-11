@@ -23,7 +23,7 @@ Ground truth is sourced from TMLR Action Editor decisions. The `flaws_*` categor
 | `openai_evals/` | Custom prompt | GPT-5.5 (`prompt_gpt_5_5.txt`) |
 | `claude_evals/` | Custom prompt | Claude Opus 4.7 (`prompt_opus_4_7.txt`) |
 | `cspaper_evals/` | [CSPaper](https://cspaper.org/) | via CSPaper API |
-| `reviewertoo_evals/` | [ReviewerToo](https://reviewertoo.org) | Internal |
+| `reviewertoo_evals/` | [ReviewerToo](https://reviewertoo.org) | via ReviewerToo API |
 
 ## Repository Structure
 
@@ -106,8 +106,4 @@ Papers used as calibration examples in the GPT-5.5 and Opus 4.7 prompts are list
    ```
 2. Open `tmlr_ai_reviewer_eval.ipynb` and run all cells. `BASE_DIR` is already set to `Path("test_cases_all")` — no changes needed.
 
-The notebook produces:
-- Per-category claims distributions
-- Claims accuracy per reviewer
-- Eligible + common paper comparisons across GPT-5.5, Opus 4.7, and CSPaper
-- FLAWS annotation summaries
+The notebook produces results of each AI reviewer against each category.
