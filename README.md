@@ -22,7 +22,7 @@ Ground truth is sourced from TMLR Action Editor decisions. The `flaws_*` categor
 |---|---|---|
 | `openai_evals/` | Custom prompt | GPT-5.5 (`prompt_gpt_5_5.txt`) |
 | `claude_evals/` | Custom prompt | Claude Opus 4.7 (`prompt_opus_4_7.txt`) |
-| `cspaper_evals/` | [CSPaper](https://cspaper.io) agentic reviewer | via CSPaper API |
+| `cspaper_evals/` | [CSPaper](https://cspaper.org/) | via CSPaper API |
 | `reviewertoo_evals/` | [ReviewerToo](https://reviewertoo.org) | Internal |
 
 ## Repository Structure
@@ -41,7 +41,7 @@ ai-reviewer-evals/
 
 All PDFs, ground truths, and reviewer outputs are distributed as a separate archive (not tracked in this repo due to size):
 
-> **Download:** [Google Drive — test_cases_all.zip](#https://drive.google.com/drive/folders/1l0PfN0C-jjXlT-qECT7C_EDHT61o2o61?usp=sharing)
+> **Download:** [Google Drive — test_cases_all.zip](https://drive.google.com/drive/folders/1l0PfN0C-jjXlT-qECT7C_EDHT61o2o61?usp=sharing)
 
 The archive has one subfolder per category, each containing:
 - `pdfs/` — input papers
