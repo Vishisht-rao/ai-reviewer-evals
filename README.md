@@ -4,18 +4,15 @@ Evaluation framework for benchmarking AI paper reviewers against ground-truth ac
 
 ## Overview
 
-We evaluate four AI reviewing systems on a curated set of TMLR papers across eight categories:
+We evaluate four AI reviewing systems on a curated set of TMLR papers across five categories:
 
-| Category | Papers | GT Claims | GT Audience |
-|---|---|---|---|
-| `accepted` | ~50 | Yes | Yes |
-| `both_no` | ~50 | No | No |
-| `claims_only_no` | ~50 | No | Yes |
-| `audience_only_no` | ~23 | Yes | No |
-| `class_reports` | ~25 | — | No |
-| `non_ml` | ~24 | — | No |
-| `flaws_gemini` | ~71 | No | — |
-| `flaws_openai` | ~50 | No | — |
+| Category | Papers | GT Claims |
+|---|---|---|
+| `accepted` | ~50 | Yes |
+| `both_no` | ~50 | No |
+| `claims_only_no` | ~50 | No |
+| `flaws_gemini` | ~71 | No |
+| `flaws_openai` | ~50 | No |
 
 Ground truth is sourced from TMLR Action Editor decisions. The `flaws_*` categories contain papers rejected specifically due to unsupported claims; for these, we also annotate *where* the AI reviewer located the flaw.
 
@@ -25,7 +22,7 @@ Ground truth is sourced from TMLR Action Editor decisions. The `flaws_*` categor
 |---|---|---|
 | `openai_evals/` | Custom prompt | GPT-5.5 (`prompt_gpt_5_5.txt`) |
 | `claude_evals/` | Custom prompt | Claude Opus 4.7 (`prompt_opus_4_7.txt`) |
-| `cspaper_evals/` | [CSPaper](https://cspaper.io) agentic reviewer | GPT-4o (via CSPaper API) |
+| `cspaper_evals/` | [CSPaper](https://cspaper.io) agentic reviewer | via CSPaper API |
 | `reviewertoo_evals/` | [ReviewerToo](https://reviewertoo.org) | Internal |
 
 ## Repository Structure
@@ -110,7 +107,7 @@ Papers used as calibration examples in the GPT-5.5 and Opus 4.7 prompts are list
 2. Open `tmlr_ai_reviewer_eval.ipynb` and run all cells. `BASE_DIR` is already set to `Path("test_cases_all")` — no changes needed.
 
 The notebook produces:
-- Per-category response distributions
-- Claims and audience accuracy per reviewer
+- Per-category claims distributions
+- Claims accuracy per reviewer
 - Eligible + common paper comparisons across GPT-5.5, Opus 4.7, and CSPaper
 - FLAWS annotation summaries
