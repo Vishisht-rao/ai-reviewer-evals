@@ -89,10 +89,6 @@ See [cspaper_evals/README.md](cspaper_evals/README.md).
 
 See [reviewertoo_evals/README.md](reviewertoo_evals/README.md).
 
-## Exclusions
-
-Papers used as calibration examples in the GPT-5.5 and Opus 4.7 prompts are listed in `openai_evals/prompt_examples_exclusion.json` and `claude_evals/prompt_examples_exclusion.json` (identical content). These papers are automatically excluded from all evaluations by the batch and test scripts.
-
 ## Analysis
 
 1. Download and extract `test_cases_all.zip` so that the `test_cases_all/` folder sits **next to this notebook** inside `ai-reviewer-evals/`:
